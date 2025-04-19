@@ -1,0 +1,61 @@
+.genre{
+  background-color: #111;
+  padding: 40px;
+
+}
+
+.trending-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 20px 40px;
+  background-color: #111;
+
+}
+
+.trending-card {
+  background-color: #222;
+  border-radius: 10px;
+  overflow: hidden;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trending-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.7);
+}
+
+.trending-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid #333;
+}
+
+.trending-card h2 {
+  font-size: 1.1rem;
+  margin: 10px 15px 5px;
+  font-weight: 600;
+  font-family: 'Arial', sans-serif;
+}
+
+.trending-card p {
+  margin: 5px 15px 10px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Arial', sans-serif;
+}
+
+.trending-card p:first-of-type {
+  color: #f5c518; /* IMDb gold style for rating */
+  font-weight: bold;
+}
+
+.trending-card p:last-of-type {
+  color: #29b6f6; /* Netflix blue tone for views */
+  font-weight: bold;
+}

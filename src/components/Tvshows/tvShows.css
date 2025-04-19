@@ -1,0 +1,54 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+ 
+}
+
+.tvshow-title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 100px 0;
+}
+
+.tvshow-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 10px 10px;
+  justify-content: center;
+}
+
+.tvshow-card {
+  width: 300px;
+  background-color: #141414;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.tvshow-card:hover {
+  transform: scale(1.05);
+}
+
+.tvshow-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.tvshow-info {
+  padding: 10px;
+}
+
+.tvshow-info h3 {
+  font-size: 1.1rem;
+  margin: 10px 0 5px;
+}
+
+.tvshow-info p {
+  font-size: 0.85rem;
+  margin: 4px 0;
+  color: #ccc;
+}
